@@ -57,7 +57,6 @@ public class ClickToMove : MonoBehaviour {
 			if (distBetween <= 1)canMove = 0;
 		}
 	}
-
 	//Function for yielding positive and negative values for an angle between 2 objects. Replaces Vector3.Angle
 	float SignedAngleBetween(Vector3 a, Vector3 b, Vector3 n){
 		// code referenced from stackoverflow

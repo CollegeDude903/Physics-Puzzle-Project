@@ -68,10 +68,10 @@ public class FlyController : MonoBehaviour {
 		//////////////////////////////////////////
 
 		//Clamps the velocity so you don't go flying off the screen
-		if (Mathf.Abs(rb.velocity.y) > maxVelocity) {;
+		if (Mathf.Abs(rb.velocity.y) > maxVelocity) {
 			rb.velocity = movement * maxVelocity * Time.fixedDeltaTime;
 		}
-		print (fuelTimer);
+		//print (fuelTimer);
 		///////////////////////////////////////////////////////////
 	}
 	void OnCollisionEnter(Collision collision){
