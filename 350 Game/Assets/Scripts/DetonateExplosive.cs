@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DetonateExplosive : MonoBehaviour {
 
-	public float radius = 20;
+	public float radius = 5;
 	public float power = 400;
 	public float explosiveLift = 10;
 
@@ -19,8 +19,10 @@ public class DetonateExplosive : MonoBehaviour {
 		
 		foreach (Collider hit in colliders) {
 			Rigidbody rb = hit.GetComponent<Rigidbody>();
-			if (rb != null && hit.tag == ("Blocks"))
+			if (rb != null && hit.tag == ("Blocks")) {
+				rb.isKinematic = false;
 				rb.AddExplosionForce(power, explosivePos, radius, explosiveLift);
+			}
 			Destroy(gameObject);
 		}
 	}

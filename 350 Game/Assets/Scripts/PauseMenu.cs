@@ -26,10 +26,15 @@ public class PauseMenu : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.P)) { 
 			Pause ();
 		}
-		if(Input.GetKeyDown (KeyCode.F1))
+		if(Input.GetKeyDown (KeyCode.R))
 		   {
 			Reset ();
 
+		}
+		if(Input.GetKeyDown (KeyCode.Escape))
+		{
+			Application.Quit();
+			
 		}
 	
 	}
@@ -44,7 +49,6 @@ public class PauseMenu : MonoBehaviour {
 		//paused is true set the timescale of the scene to zero
 		if (paused) {
 			Time.timeScale=0;//When the timescale is zero the scene state is stopped and stored
-			//Application.LoadLevel("PauseMenu"); //This is to load the PauseMenu scene 
 		}
 		//Operation for when the paused variable is false
 		if (!paused) {
@@ -57,6 +61,6 @@ public class PauseMenu : MonoBehaviour {
 	/// </summary>
 	public void Reset()
 	{
-		Application.LoadLevel ("Scene4(GitHub)");//Reload the scene
+		Application.LoadLevel ("Scene5");//Reload the scene
 	}
 }

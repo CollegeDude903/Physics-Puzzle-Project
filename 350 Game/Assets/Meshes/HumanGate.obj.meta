@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 9634ac157e6e77c43bd94325a54239ec
+timeCreated: 1447851450
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: HumanGate_00
+    100004: HumanGate_01
+    100006: HumanGate_02
+    100008: HumanGate_03
+    100010: HumanGate_04
+    100012: HumanGate_05
+    100014: HumanGate_06
+    100016: HumanGate_07
+    100018: HumanGate_08
+    100020: HumanGate_09
+    100022: HumanGate_10
+    100024: HumanGate_11
+    100026: HumanGate_12
+    100028: HumanGate_13
+    100030: HumanGate_14
+    100032: HumanGate_15
+    100034: HumanGate_16
+    100036: HumanGate_17
+    100038: HumanGate_18
+    100040: HumanGate_19
+    100042: HumanGate_20
+    100044: HumanGate_21
+    100046: HumanGate_22
+    100048: HumanGate_23
+    100050: HumanGate_24
+    400000: //RootNode
+    400002: HumanGate_00
+    400004: HumanGate_01
+    400006: HumanGate_02
+    400008: HumanGate_03
+    400010: HumanGate_04
+    400012: HumanGate_05
+    400014: HumanGate_06
+    400016: HumanGate_07
+    400018: HumanGate_08
+    400020: HumanGate_09
+    400022: HumanGate_10
+    400024: HumanGate_11
+    400026: HumanGate_12
+    400028: HumanGate_13
+    400030: HumanGate_14
+    400032: HumanGate_15
+    400034: HumanGate_16
+    400036: HumanGate_17
+    400038: HumanGate_18
+    400040: HumanGate_19
+    400042: HumanGate_20
+    400044: HumanGate_21
+    400046: HumanGate_22
+    400048: HumanGate_23
+    400050: HumanGate_24
+    2300000: HumanGate_00
+    2300002: HumanGate_01
+    2300004: HumanGate_02
+    2300006: HumanGate_03
+    2300008: HumanGate_04
+    2300010: HumanGate_05
+    2300012: HumanGate_06
+    2300014: HumanGate_07
+    2300016: HumanGate_08
+    2300018: HumanGate_09
+    2300020: HumanGate_10
+    2300022: HumanGate_11
+    2300024: HumanGate_12
+    2300026: HumanGate_13
+    2300028: HumanGate_14
+    2300030: HumanGate_15
+    2300032: HumanGate_16
+    2300034: HumanGate_17
+    2300036: HumanGate_18
+    2300038: HumanGate_19
+    2300040: HumanGate_20
+    2300042: HumanGate_21
+    2300044: HumanGate_22
+    2300046: HumanGate_23
+    2300048: HumanGate_24
+    3300000: HumanGate_00
+    3300002: HumanGate_01
+    3300004: HumanGate_02
+    3300006: HumanGate_03
+    3300008: HumanGate_04
+    3300010: HumanGate_05
+    3300012: HumanGate_06
+    3300014: HumanGate_07
+    3300016: HumanGate_08
+    3300018: HumanGate_09
+    3300020: HumanGate_10
+    3300022: HumanGate_11
+    3300024: HumanGate_12
+    3300026: HumanGate_13
+    3300028: HumanGate_14
+    3300030: HumanGate_15
+    3300032: HumanGate_16
+    3300034: HumanGate_17
+    3300036: HumanGate_18
+    3300038: HumanGate_19
+    3300040: HumanGate_20
+    3300042: HumanGate_21
+    3300044: HumanGate_22
+    3300046: HumanGate_23
+    3300048: HumanGate_24
+    4300000: HumanGate_00
+    4300002: HumanGate_01
+    4300004: HumanGate_02
+    4300006: HumanGate_03
+    4300008: HumanGate_04
+    4300010: HumanGate_05
+    4300012: HumanGate_06
+    4300014: HumanGate_07
+    4300016: HumanGate_08
+    4300018: HumanGate_09
+    4300020: HumanGate_10
+    4300022: HumanGate_11
+    4300024: HumanGate_12
+    4300026: HumanGate_13
+    4300028: HumanGate_14
+    4300030: HumanGate_15
+    4300032: HumanGate_16
+    4300034: HumanGate_17
+    4300036: HumanGate_18
+    4300038: HumanGate_19
+    4300040: HumanGate_20
+    4300042: HumanGate_21
+    4300044: HumanGate_22
+    4300046: HumanGate_23
+    4300048: HumanGate_24
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

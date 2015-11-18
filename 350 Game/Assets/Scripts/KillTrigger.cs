@@ -15,16 +15,19 @@ public class KillTrigger : MonoBehaviour {
 	{
 
 		
-
+		if (col.tag == ("Player")) {
 			Destroy (col.gameObject);	
-			ReloadGame();
+			ReloadGame ();
+		} else if (col.tag == ("Blocks")) {
+			Destroy (col.gameObject);	
+		}
 		
 	}
 	
 	public void ReloadGame()
 	{			
 	
-		Application.LoadLevel ("Scene4(GitHub)");//loads scene
+		Application.LoadLevel ("Scene5");//loads scene
 
 	}
 }

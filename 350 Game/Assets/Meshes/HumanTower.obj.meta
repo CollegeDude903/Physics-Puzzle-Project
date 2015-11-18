@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 8a3626476bf99b44e87453ad34f755a0
+timeCreated: 1447850970
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: HumanTower_00
+    100004: HumanTower_01
+    100006: HumanTower_02
+    100008: HumanTower_03
+    100010: HumanTower_04
+    100012: HumanTower_05
+    100014: HumanTower_06
+    100016: HumanTower_07
+    100018: HumanTower_08
+    100020: HumanTower_09
+    100022: HumanTower_11
+    100024: HumanTower_12
+    100026: HumanTower_13
+    100028: HumanTower_14
+    100030: HumanTower_15
+    100032: HumanTower_16
+    100034: HumanTower_17
+    100036: HumanTower_18
+    100038: HumanTower_19
+    100040: HumanTower_20
+    100042: HumanTower_21
+    100044: HumanTower_22
+    100046: HumanTower_23
+    100048: HumanTower_24
+    400000: //RootNode
+    400002: HumanTower_00
+    400004: HumanTower_01
+    400006: HumanTower_02
+    400008: HumanTower_03
+    400010: HumanTower_04
+    400012: HumanTower_05
+    400014: HumanTower_06
+    400016: HumanTower_07
+    400018: HumanTower_08
+    400020: HumanTower_09
+    400022: HumanTower_11
+    400024: HumanTower_12
+    400026: HumanTower_13
+    400028: HumanTower_14
+    400030: HumanTower_15
+    400032: HumanTower_16
+    400034: HumanTower_17
+    400036: HumanTower_18
+    400038: HumanTower_19
+    400040: HumanTower_20
+    400042: HumanTower_21
+    400044: HumanTower_22
+    400046: HumanTower_23
+    400048: HumanTower_24
+    2300000: HumanTower_00
+    2300002: HumanTower_01
+    2300004: HumanTower_02
+    2300006: HumanTower_03
+    2300008: HumanTower_04
+    2300010: HumanTower_05
+    2300012: HumanTower_06
+    2300014: HumanTower_07
+    2300016: HumanTower_08
+    2300018: HumanTower_09
+    2300020: HumanTower_11
+    2300022: HumanTower_12
+    2300024: HumanTower_13
+    2300026: HumanTower_14
+    2300028: HumanTower_15
+    2300030: HumanTower_16
+    2300032: HumanTower_17
+    2300034: HumanTower_18
+    2300036: HumanTower_19
+    2300038: HumanTower_20
+    2300040: HumanTower_21
+    2300042: HumanTower_22
+    2300044: HumanTower_23
+    2300046: HumanTower_24
+    3300000: HumanTower_00
+    3300002: HumanTower_01
+    3300004: HumanTower_02
+    3300006: HumanTower_03
+    3300008: HumanTower_04
+    3300010: HumanTower_05
+    3300012: HumanTower_06
+    3300014: HumanTower_07
+    3300016: HumanTower_08
+    3300018: HumanTower_09
+    3300020: HumanTower_11
+    3300022: HumanTower_12
+    3300024: HumanTower_13
+    3300026: HumanTower_14
+    3300028: HumanTower_15
+    3300030: HumanTower_16
+    3300032: HumanTower_17
+    3300034: HumanTower_18
+    3300036: HumanTower_19
+    3300038: HumanTower_20
+    3300040: HumanTower_21
+    3300042: HumanTower_22
+    3300044: HumanTower_23
+    3300046: HumanTower_24
+    4300000: HumanTower_00
+    4300002: HumanTower_01
+    4300004: HumanTower_02
+    4300006: HumanTower_03
+    4300008: HumanTower_04
+    4300010: HumanTower_05
+    4300012: HumanTower_06
+    4300014: HumanTower_07
+    4300016: HumanTower_08
+    4300018: HumanTower_09
+    4300020: HumanTower_11
+    4300022: HumanTower_12
+    4300024: HumanTower_13
+    4300026: HumanTower_14
+    4300028: HumanTower_15
+    4300030: HumanTower_16
+    4300032: HumanTower_17
+    4300034: HumanTower_18
+    4300036: HumanTower_19
+    4300038: HumanTower_20
+    4300040: HumanTower_21
+    4300042: HumanTower_22
+    4300044: HumanTower_23
+    4300046: HumanTower_24
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
