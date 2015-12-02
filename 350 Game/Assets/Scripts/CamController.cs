@@ -15,16 +15,16 @@ public class CamController : MonoBehaviour {
 
 	void Update () {
 
-		if (Input.mousePosition.y < Screen.height / edgeBoundary || Input.GetButton ("Vertical") && Input.GetAxis ("Vertical") < 0) {
+		if (Input.mousePosition.y < Screen.height / edgeBoundary) {
 			transform.position += Vector3.back * Time.deltaTime * verticalSpeed;
 		}
-		if (Input.mousePosition.y > Screen.height - Screen.height / edgeBoundary || Input.GetButton ("Vertical") && Input.GetAxis ("Vertical") > 0) {
+		if (Input.mousePosition.y > Screen.height - Screen.height / edgeBoundary) {
 			transform.position += Vector3.forward * Time.deltaTime * verticalSpeed;
 		}
-		if (Input.mousePosition.x < Screen.width / edgeBoundary || Input.GetButton ("Horizontal") && Input.GetAxis ("Horizontal") < 0) {
+		if (Input.mousePosition.x < Screen.width / edgeBoundary) {
 			transform.position += Vector3.left * Time.deltaTime * horizontalSpeed;
 		}
-		if (Input.mousePosition.x > Screen.width - Screen.width / edgeBoundary || Input.GetButton ("Horizontal") && Input.GetAxis ("Horizontal") > 0) {
+		if (Input.mousePosition.x > Screen.width - Screen.width / edgeBoundary) {
 			transform.position += Vector3.right * Time.deltaTime * horizontalSpeed;
 		}
 

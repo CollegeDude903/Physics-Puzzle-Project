@@ -20,7 +20,7 @@ public class ClickToMove : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetButtonDown ("Fire2")) {
-			canMove = 1;
+			canMove = 0;
 			turning = true;
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			RaycastHit hit;
