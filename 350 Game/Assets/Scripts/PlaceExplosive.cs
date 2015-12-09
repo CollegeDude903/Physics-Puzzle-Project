@@ -13,11 +13,16 @@ public class PlaceExplosive : MonoBehaviour {
 	public float power = 400;
 	public float explosiveLift = 10;
 	public float bombOffset = 2;
+	ParticleSystem bombExplosion;
 	int bombsPlanted;
 	int bombsCarrying;
 	int castlePart;
 	GameObject[] bombs;
-	
+
+	void Awake(){
+		bombExplosion = GetComponentInChildren<ParticleSystem> ();
+	}
+
 	void Start(){
 		bombsCarrying = bombsStartWith;
 		bombs = new GameObject[bombsMaxCarry];
@@ -76,6 +81,9 @@ public class PlaceExplosive : MonoBehaviour {
 		for (int i = 1; i <= bombsPlanted; i++) {
 			bombs[i - 1] = bombs[i];
 		}
+		bombExplosion.transform.parent = null;
+		bombExplosion.transform.position = bombs[0].transform.position;
+		bombExplosion.Play ();
 		Destroy(bombs[0]);
 		bombsPlanted--;
 	}
