@@ -2,9 +2,8 @@
 using System.Collections;
 
 public class TwinStickController : MonoBehaviour {
-
+	
 	public Transform player;
-	public Transform cam;
 	public float moveSpeed = 6;
 	public float turnSpeed = 500;
 	public float coneRadius = 225;
@@ -12,12 +11,10 @@ public class TwinStickController : MonoBehaviour {
 	Vector3 playerPos;
 	Vector3 targetDir;
 	Vector3 forward;
-	Vector3 camPos;
 
 
 
 	void Update () {
-		CamPosition ();
 		Raycast ();
 		Rotate ();
 		Movement ();
@@ -47,11 +44,5 @@ public class TwinStickController : MonoBehaviour {
 		float moveVertical = Input.GetAxis ("Vertical");
 		Vector3 movement = new Vector3 (moveHorizontal, 0f, moveVertical);
 		player.Translate (movement * moveSpeed * Time.deltaTime, Space.World);
-	}
-	void CamPosition(){
-		camPos = cam.transform.position;
-		camPos.x = player.position.x;
-		camPos.z = player.position.z;
-		cam.position = new Vector3(camPos.x, 20, camPos.z - 20);
 	}
 }

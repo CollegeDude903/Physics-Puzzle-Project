@@ -27,7 +27,7 @@ public class KillTrigger : MonoBehaviour {
 	public void ReloadGame()
 	{			
 	
-		Application.LoadLevel ("Scene5");//loads scene
+		Application.LoadLevel ("Scene6");//loads scene
 
 	}
 }

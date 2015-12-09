@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class FlyController : MonoBehaviour {
-
+	
 	public Rigidbody rb;
 	public float thrust = 300;
 	public float maxVelocity = 250;
@@ -11,6 +11,9 @@ public class FlyController : MonoBehaviour {
 	public float fuelTimer;
 	public float maxFuel = 2.5f;
 	bool isGrounded = true;
+	public static bool isFlying;
+	public static bool isFalling;
+	bool canFall;
 
 	void Start(){
 		rb = GetComponent<Rigidbody>();
@@ -27,22 +30,37 @@ public class FlyController : MonoBehaviour {
 		}
 
 		if (isGrounded == true) {
+			isFalling = false;
+			isFlying = false;
+			canFall = false;
+			if (PlayerAnimController.isMoving == true) PlayerAnimController.isMoving = false;
 			fuelTimer += Time.fixedDeltaTime;
 			if (fuelTimer >= maxFuel) fuelTimer = maxFuel;
 
 		} else {
-			if (fuelTimer > 0) {
-				//Move up or down when holding down "Q" or "E"
-				if (Input.GetButton ("Fly")) {
+			//Move up when holding down space bar.
+			if (Input.GetButton ("Fly")) {
+				if (fuelTimer > 0){
+					if (isFlying == false){
+						PlayerAnimController.anim.Play ("Fly");
+						isFlying = true;
+						isFalling = false;
+						canFall = true;
+					}
 					rb.velocity = movement * thrust * Time.fixedDeltaTime;
 					fuelTimer -= Time.fixedDeltaTime;
 					if (fuelTimer <= 0) {
 						fuelTimer = 0;
 					}
-				} else if (isGrounded == false) {
-					if (rb.velocity.y * movement.y > 0) {
-						rb.velocity = movement;
-					}
+				}
+			} else if (isGrounded == false && canFall == true) {
+				isFlying = false;
+				if (isFalling == false){
+					isFalling = true;
+					PlayerAnimController.anim.Play ("Fall");
+				}
+				if (rb.velocity.y * movement.y > 0) {
+					rb.velocity = movement;
 				}
 			}
 		}
@@ -53,7 +71,7 @@ public class FlyController : MonoBehaviour {
 		if (Mathf.Abs(rb.velocity.y) > maxVelocity) {
 			rb.velocity = movement * maxVelocity * Time.fixedDeltaTime;
 		}
-		print (fuelTimer);
+		//print (fuelTimer);
 		///////////////////////////////////////////////////////////
 	}
 	void OnCollisionEnter(Collision collision){
