@@ -61,6 +61,6 @@ public class PauseMenu : MonoBehaviour {
 	/// </summary>
 	public void Reset()
 	{
-		Application.LoadLevel ("Scene5");//Reload the scene
+		RestartLevel.Restart ();
 	}
 }

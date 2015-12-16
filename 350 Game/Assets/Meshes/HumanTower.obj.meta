@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8a3626476bf99b44e87453ad34f755a0
-timeCreated: 1447850970
+timeCreated: 1450239576
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -16,20 +16,8 @@ ModelImporter:
     100016: HumanTower_07
     100018: HumanTower_08
     100020: HumanTower_09
-    100022: HumanTower_11
-    100024: HumanTower_12
-    100026: HumanTower_13
-    100028: HumanTower_14
-    100030: HumanTower_15
-    100032: HumanTower_16
-    100034: HumanTower_17
-    100036: HumanTower_18
-    100038: HumanTower_19
-    100040: HumanTower_20
-    100042: HumanTower_21
-    100044: HumanTower_22
-    100046: HumanTower_23
-    100048: HumanTower_24
+    100022: HumanTower_10
+    100024: HumanTower_11
     400000: //RootNode
     400002: HumanTower_00
     400004: HumanTower_01
@@ -41,20 +29,8 @@ ModelImporter:
     400016: HumanTower_07
     400018: HumanTower_08
     400020: HumanTower_09
-    400022: HumanTower_11
-    400024: HumanTower_12
-    400026: HumanTower_13
-    400028: HumanTower_14
-    400030: HumanTower_15
-    400032: HumanTower_16
-    400034: HumanTower_17
-    400036: HumanTower_18
-    400038: HumanTower_19
-    400040: HumanTower_20
-    400042: HumanTower_21
-    400044: HumanTower_22
-    400046: HumanTower_23
-    400048: HumanTower_24
+    400022: HumanTower_10
+    400024: HumanTower_11
     2300000: HumanTower_00
     2300002: HumanTower_01
     2300004: HumanTower_02
@@ -65,20 +41,8 @@ ModelImporter:
     2300014: HumanTower_07
     2300016: HumanTower_08
     2300018: HumanTower_09
-    2300020: HumanTower_11
-    2300022: HumanTower_12
-    2300024: HumanTower_13
-    2300026: HumanTower_14
-    2300028: HumanTower_15
-    2300030: HumanTower_16
-    2300032: HumanTower_17
-    2300034: HumanTower_18
-    2300036: HumanTower_19
-    2300038: HumanTower_20
-    2300040: HumanTower_21
-    2300042: HumanTower_22
-    2300044: HumanTower_23
-    2300046: HumanTower_24
+    2300020: HumanTower_10
+    2300022: HumanTower_11
     3300000: HumanTower_00
     3300002: HumanTower_01
     3300004: HumanTower_02
@@ -89,20 +53,8 @@ ModelImporter:
     3300014: HumanTower_07
     3300016: HumanTower_08
     3300018: HumanTower_09
-    3300020: HumanTower_11
-    3300022: HumanTower_12
-    3300024: HumanTower_13
-    3300026: HumanTower_14
-    3300028: HumanTower_15
-    3300030: HumanTower_16
-    3300032: HumanTower_17
-    3300034: HumanTower_18
-    3300036: HumanTower_19
-    3300038: HumanTower_20
-    3300040: HumanTower_21
-    3300042: HumanTower_22
-    3300044: HumanTower_23
-    3300046: HumanTower_24
+    3300020: HumanTower_10
+    3300022: HumanTower_11
     4300000: HumanTower_00
     4300002: HumanTower_01
     4300004: HumanTower_02
@@ -113,20 +65,8 @@ ModelImporter:
     4300014: HumanTower_07
     4300016: HumanTower_08
     4300018: HumanTower_09
-    4300020: HumanTower_11
-    4300022: HumanTower_12
-    4300024: HumanTower_13
-    4300026: HumanTower_14
-    4300028: HumanTower_15
-    4300030: HumanTower_16
-    4300032: HumanTower_17
-    4300034: HumanTower_18
-    4300036: HumanTower_19
-    4300038: HumanTower_20
-    4300040: HumanTower_21
-    4300042: HumanTower_22
-    4300044: HumanTower_23
-    4300046: HumanTower_24
+    4300020: HumanTower_10
+    4300022: HumanTower_11
   materials:
     importMaterials: 1
     materialName: 0

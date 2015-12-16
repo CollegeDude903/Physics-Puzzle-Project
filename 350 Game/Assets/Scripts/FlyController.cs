@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class FlyController : MonoBehaviour {
 	
@@ -8,35 +9,39 @@ public class FlyController : MonoBehaviour {
 	public float maxVelocity = 250;
 	public float explosionForce = 40;
 	public float explosionRadius = 20;
-	public float fuelTimer;
-	public float maxFuel = 2.5f;
+	public float fuelTimer = 1f;
+	public float fuelDepleteOverSeconds = 2.5f;
+	public Image fuelImage;
 	bool isGrounded = true;
 	public static bool isFlying;
 	public static bool isFalling;
 	bool canFall;
-
+	
 	void Start(){
 		rb = GetComponent<Rigidbody>();
-		fuelTimer = maxFuel;
 	}
-
+	
+	void Update(){
+		fuelImage.fillAmount = fuelTimer;
+	}
+	
 	void FixedUpdate () {
-
+		
 		float moveVertical = Input.GetAxis ("Fly");
 		Vector3 movement = new Vector3 (0, moveVertical, 0);
-
+		
 		if (Input.GetAxis ("Fly") > 0 && isGrounded == true) {
 			rb.AddExplosionForce (explosionForce, transform.position, explosionRadius);
 		}
-
+		
 		if (isGrounded == true) {
 			isFalling = false;
 			isFlying = false;
 			canFall = false;
 			if (PlayerAnimController.isMoving == true) PlayerAnimController.isMoving = false;
-			fuelTimer += Time.fixedDeltaTime;
-			if (fuelTimer >= maxFuel) fuelTimer = maxFuel;
-
+			fuelTimer += 1f/fuelDepleteOverSeconds*Time.fixedDeltaTime;
+			if (fuelTimer >= 1f) fuelTimer = 1f;
+			
 		} else {
 			//Move up when holding down space bar.
 			if (Input.GetButton ("Fly")) {
@@ -48,7 +53,7 @@ public class FlyController : MonoBehaviour {
 						canFall = true;
 					}
 					rb.velocity = movement * thrust * Time.fixedDeltaTime;
-					fuelTimer -= Time.fixedDeltaTime;
+					fuelTimer -=  1f/fuelDepleteOverSeconds*Time.fixedDeltaTime;
 					if (fuelTimer <= 0) {
 						fuelTimer = 0;
 					}
@@ -66,7 +71,7 @@ public class FlyController : MonoBehaviour {
 		}
 		//print (transform.position.y);
 		//////////////////////////////////////////
-
+		
 		//Clamps the velocity so you don't go flying off the screen
 		if (Mathf.Abs(rb.velocity.y) > maxVelocity) {
 			rb.velocity = movement * maxVelocity * Time.fixedDeltaTime;

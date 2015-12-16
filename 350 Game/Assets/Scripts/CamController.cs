@@ -3,12 +3,7 @@ using System.Collections;
 
 public class CamController : MonoBehaviour {
 
-	public int edgeBoundary = 20;
-
 	public Transform player;
-	public float horizontalSpeed = 25;
-	public float verticalSpeed = 18;
-	public float cameraRotateSpeed = 80;
 	public float cameraDistance = 20;
 	Vector3 camPos;
 	
@@ -41,14 +36,16 @@ public class CamController : MonoBehaviour {
 		}
 		if(curDistance != cameraDistance) {
 			float difference = cameraDistance - curDistance;
-			transform.position = Vector3.MoveTowards(transform.position, transform.position + new Vector3(0,difference,0),Time.deltaTime);
+			transform.position = Vector3.MoveTowards(transform.position, transform.position + new Vector3(0,difference,0),Time.deltaTime*10);
 		}
 	}
 	void CamPosition(){
-		camPos = transform.position;
-		camPos.x = player.position.x;
-		camPos.z = player.position.z - 10;
-		camPos.y = transform.position.y;
-		transform.position = camPos;
+		if (player != null) {
+			camPos = transform.position;
+			camPos.x = player.position.x;
+			camPos.z = player.position.z - 10;
+			camPos.y = transform.position.y;
+			transform.position = camPos;
+		}
 	}
 }

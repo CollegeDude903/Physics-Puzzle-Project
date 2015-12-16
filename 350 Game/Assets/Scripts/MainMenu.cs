@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour {
 	/// </summary>
 	public void PlayGame()
 	{
-		Application.LoadLevel ("Scene5");
+		Application.LoadLevel ("Level1");
 	}
 	/// <summary>
 	/// ExitGame() is set for the Exit button on the Main Menu scene which quits the application

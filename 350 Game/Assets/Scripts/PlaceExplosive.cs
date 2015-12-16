@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class PlaceExplosive : MonoBehaviour {
 	
 	public GameObject bombPrefab;
 	public GameObject[] castlePrefabs;
+	public Image[] bombImages;
 	public int bombsStartWith = 3;
-	public int bombsMaxCarry = 20;
 	public float shootPower = 10;
 	public float radius = 5;
 	public float power = 400;
@@ -17,6 +18,7 @@ public class PlaceExplosive : MonoBehaviour {
 	int bombsPlanted;
 	int bombsCarrying;
 	int castlePart;
+	int count;
 	GameObject[] bombs;
 
 	void Awake(){
@@ -25,13 +27,15 @@ public class PlaceExplosive : MonoBehaviour {
 
 	void Start(){
 		bombsCarrying = bombsStartWith;
-		bombs = new GameObject[bombsMaxCarry];
+		bombs = new GameObject[bombsStartWith + 1];
 	}
 	
 	void Update () {
-		if (Input.GetButtonDown("PlaceBomb") && bombsCarrying > 0 && bombsPlanted < bombsMaxCarry - 1){
+		if (Input.GetButtonDown("PlaceBomb") && bombsCarrying > 0){
 			bombsPlanted++;
-			//bombsMax --;
+			bombsCarrying--;
+			bombImages[count].fillAmount = 0f;
+			count++;
 			bombs[bombsPlanted] = Instantiate(bombPrefab, transform.position + transform.forward*bombOffset, transform.rotation) as GameObject;
 
 			/*bombRB[bombCount] = bomb2[bombCount].GetComponent<Rigidbody>();

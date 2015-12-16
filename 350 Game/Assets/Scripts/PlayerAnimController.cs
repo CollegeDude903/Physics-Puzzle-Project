@@ -13,7 +13,7 @@ public class PlayerAnimController : MonoBehaviour {
 	}
 
 	void Update () {
-		print (FlyController.isFalling);
+		//print (FlyController.isFalling);
 		if (FlyController.isFlying == false && FlyController.isFalling == false) {
 			if (Input.GetButton ("Horizontal") || Input.GetButton ("Vertical")) {
 				if (isMoving == false){
